@@ -51,7 +51,7 @@ const UserSchema = new mongoose.Schema(
 UserSchema.statics.findByCredentials = async (email, password) => {
   const user = await User.findOne({ email });
   if (!user) throw new Error("Invalid Credentials");
-  const isSamePassword = await bcrypt.compareSync(password, user.password);
+  const isSamePassword = await bcrypt.compare(password, user.password);
   if (isSamePassword) return user;
   throw new Error("Invalid Credentials");
 };
@@ -64,11 +64,11 @@ UserSchema.methods.toJSON = function () {
 };
 
 // Hash password before saving
-UserSchema.pre("save", async function (next) {
-  const hashedPassword = await bcrypt.hash(this.password, 10);
-  this.password = hashedPassword;
-  next();
-});
+// UserSchema.pre("save", async function (next) {
+//   const hashedPassword = await bcrypt.hash(this.password, 10);
+//   this.password = hashedPassword;
+//   next();
+// });
 
 // remove Orders/Order whenever users are removed
 UserSchema.pre("remove", function (next) {

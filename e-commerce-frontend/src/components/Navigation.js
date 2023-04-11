@@ -84,6 +84,9 @@ const Navigation = () => {
                 </Button>
               </NavDropdown>
             )}
+            <LinkContainer to="/about">
+              <Nav.Link>About Us</Nav.Link>
+            </LinkContainer>
           </Nav>
         </Navbar.Collapse>
       </Container>
@@ -92,3 +95,5 @@ const Navigation = () => {
 };
 
 export default Navigation;
+
+// VIDEO 5:30
