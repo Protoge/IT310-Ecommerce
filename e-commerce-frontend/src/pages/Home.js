@@ -22,11 +22,11 @@ const Home = () => {
   return (
     <div>
       <img
-        src="https://res.cloudinary.com/dxrcubiuj/image/upload/v1678648981/E-commerce_Shop_hhsiud.png"
+        src="https://res.cloudinary.com/dxrcubiuj/image/upload/v1682839182/flexwear_zves94.png"
         className="home-banner"
       />
       <div className="featured-products-container container mt-4">
-        <h2>Last products</h2>
+        <h2>Latest products</h2>
         {/* last products here */}
         <div className="d-flex justify-content-center flex-wrap">
           {lastProducts.map((product) => (
@@ -48,7 +48,7 @@ const Home = () => {
       </div>
       {/* sale banner */}
       <div className="sale__banner--container mt-4">
-        <img src="https://res.cloudinary.com/dxrcubiuj/image/upload/v1678648981/E-commerce_Shop_hhsiud.png"></img>
+        <img src="https://res.cloudinary.com/dxrcubiuj/image/upload/v1682839182/flexwear_zves94.png"></img>
       </div>
       <div className="recent-products-contianer container mt-4">
         <h2>Categories</h2>

@@ -25,7 +25,7 @@ const Navigation = () => {
     <Navbar bg="light" expand="lg">
       <Container>
         <LinkContainer to="/">
-          <Navbar.Brand href="#home">E-commerce Shop</Navbar.Brand>
+          <Navbar.Brand href="#home">FlexWear</Navbar.Brand>
         </LinkContainer>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

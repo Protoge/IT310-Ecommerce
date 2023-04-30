@@ -146,10 +146,12 @@ const NewProduct = () => {
                   {" "}
                   -- Select One --{" "}
                 </option>
-                <option value="technology">technology</option>
-                <option value="tablets">tablets</option>
-                <option value="phones">phones</option>
-                <option value="laptops">laptops</option>
+                <option value="tops">tops</option>
+                <option value="bottoms">bottoms</option>
+                <option value="accessories">accessories</option>
+                <option value="outerwear">outerwear</option>
+                <option value="sports bras">sports bras</option>
+                <option value="swimwear">swimwear</option>
               </Form.Select>
             </Form.Group>
 
