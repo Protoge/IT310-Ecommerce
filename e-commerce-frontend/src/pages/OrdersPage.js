@@ -7,11 +7,10 @@ import Loading from "../components/Loading";
 
 const OrdersPage = () => {
   const user = useSelector((state) => state.user);
-  const products = useSelector((state) => state.products);
+
   const [orders, setOrders] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [orderToShow, setOrderToShow] = useState([]);
-  const [show, setShow] = useState(false);
+
   useEffect(() => {
     setLoading(true);
     axios
@@ -24,7 +23,7 @@ const OrdersPage = () => {
         setLoading(false);
         console.log(e);
       });
-  }, []);
+  }, [user._id]);
 
   if (loading) {
     return <Loading />;

@@ -24,6 +24,7 @@ const Home = () => {
       <img
         src="https://res.cloudinary.com/dxrcubiuj/image/upload/v1682839182/flexwear_zves94.png"
         className="home-banner"
+        alt=""
       />
       <div className="featured-products-container container mt-4">
         <h2>Latest products</h2>
@@ -48,7 +49,10 @@ const Home = () => {
       </div>
       {/* sale banner */}
       <div className="sale__banner--container mt-4">
-        <img src="https://res.cloudinary.com/dxrcubiuj/image/upload/v1682839182/flexwear_zves94.png"></img>
+        <img
+          alt=""
+          src="https://res.cloudinary.com/dxrcubiuj/image/upload/v1682839182/flexwear_zves94.png"
+        ></img>
       </div>
       <div className="recent-products-contianer container mt-4">
         <h2>Categories</h2>

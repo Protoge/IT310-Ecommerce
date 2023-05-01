@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./NewProduct.css";
-import { useNavigate, Link, useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { useUpdateProductMutation } from "../services/appApi";
 import { Col, Container, Row, Form, Button, Alert } from "react-bootstrap";
 import axios from "../services/axios";
@@ -35,7 +35,7 @@ const EditProductPage = () => {
         });
       })
       .catch((e) => console.log(e));
-  }, [id]);
+  }, [id, productInfo]);
 
   const showWidget = () => {
     const widget = window.cloudinary.createUploadWidget(

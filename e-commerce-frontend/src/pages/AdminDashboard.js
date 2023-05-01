@@ -1,5 +1,4 @@
 import React from "react";
-import axios from "../services/axios";
 import "./AdminDashboard.css";
 import { Col, Container, Nav, Row, Tab } from "react-bootstrap";
 import DashboardProducts from "../components/DashboardProducts";

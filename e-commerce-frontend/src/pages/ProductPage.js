@@ -5,7 +5,6 @@ import {
   Row,
   Badge,
   ButtonGroup,
-  Form,
   Button,
 } from "react-bootstrap";
 import { useSelector } from "react-redux";
@@ -48,6 +47,7 @@ const ProductPage = () => {
 
   const images = product.pictures.map((picture) => (
     <img
+      alt=""
       className="product__carousel--image"
       src={picture.url}
       onDragStart={handleDragStart}
