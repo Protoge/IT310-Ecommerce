@@ -101,6 +101,7 @@ const OrdersAdminPage = () => {
         {orderToShow.map((order) => (
           <div className="order-details_container d-flex justify-content-around py-2">
             <img
+              alt=""
               src={order.pictures[0].url}
               style={{ maxWidth: 100, height: 100, objectFit: "cover" }}
             />

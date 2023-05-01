@@ -76,6 +76,7 @@ const CartPage = () => {
                           ></i>
                         )}
                         <img
+                          alt=""
                           src={item.pictures[0].url}
                           style={{
                             width: 100,

@@ -17,8 +17,7 @@ const DashboardProducts = () => {
       .then(({ data }) => dispatch(updateProducts(data)), []);
   });
   // removing the product
-  const [deleteProduct, { isError, isLoading, isSuccess }] =
-    useDeleteProductMutation();
+  const [deleteProduct, { isLoading }] = useDeleteProductMutation();
 
   const handleDeleteProduct = (id) => {
     if (window.confirm("Are you sure?"))
@@ -39,6 +38,7 @@ const DashboardProducts = () => {
           <tr>
             <td>
               <img
+                alt=""
                 src={product.pictures[0].url}
                 className="dashboard-product-preview"
               />

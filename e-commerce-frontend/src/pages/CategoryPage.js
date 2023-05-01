@@ -24,7 +24,7 @@ const CategoryPage = () => {
         setLoading(false);
         console.log(e.message);
       });
-  });
+  }, [category]);
 
   if (loading) {
     <Loading />;
